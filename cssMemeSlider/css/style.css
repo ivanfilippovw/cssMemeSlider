@@ -4,21 +4,32 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   margin: 0;
-  background: black;
+  font-size: 2rem;
+  background: #ebdcb2;
 }
+
+/*
+background: #662e1c;
+  background-color: #af4425;
+*/
 
 .container {
   margin: 50px auto;
   padding: 20px;
   width: 60%;
-  background-color: lightslategray;
-  border: 10px solid lightcoral;
+  background-color: #c9a66b;
+  border: 10px solid #000000;
 }
 
 .slider {
   display: grid;
+  grid-template-columns: 2fr 1fr;
   grid-template-areas:
   "img img"
   "title selector";
@@ -37,7 +48,7 @@ body {
 .slider__carousel {
   display: flex;
   width: 500%;
-  transition: margin-left 0.3s;
+  transition: margin-left 0.5s;
 }
 
 #mem1:checked ~ .slider__images-container > .slider__carousel {
@@ -72,27 +83,25 @@ body {
 
 .slider__button {
   display: flex;
-  padding: 15px;
+  padding: 1rem;
   cursor: pointer;
 }
 
 .button__icon {
-  width: 30px;
-  height: 30px;
-  background-color: white;
-  border: 5px solid red;
+  width: 2rem;
+  height: 2rem;
+  background-color: #ebdcb2;
+  border: 0.3rem solid #662e1c;
   border-radius: 50%;
   transition: all 0.3s;
 }
 
 .slider__button:hover > .button__icon {
-  background-color: brown;
-  border-color: brown;
+  background-color: #af4425;
 }
 
 .slider__button:active > .button__icon {
-  background-color: yellow;
-  border-color: yellow;
+  background-color: yellowgreen;
 }
 
 #mem1:checked ~ .slider__selectors-container > .slider__button:nth-of-type(1) > .button__icon,
@@ -100,12 +109,13 @@ body {
 #mem3:checked ~ .slider__selectors-container > .slider__button:nth-of-type(3) > .button__icon,
 #mem4:checked ~ .slider__selectors-container > .slider__button:nth-of-type(4) > .button__icon,
 #mem5:checked ~ .slider__selectors-container > .slider__button:nth-of-type(5) > .button__icon {
-  background-color: transparent;
+  background-color: #af4425;
 }
 
 .slider__titles-container {
   grid-area: title;
-  color: white;
+  font-weight: 900;
+  color: #662e1c;
 }
 
 .slider__mem-title {
@@ -120,7 +130,7 @@ body {
 #mem4:checked ~ .slider__titles-container .slider__mem-title:nth-of-type(4),
 #mem5:checked ~ .slider__titles-container .slider__mem-title:nth-of-type(5) {
   display: inline-flex;
-  animation: slider-names 0.3s both;
+  animation: slider-names 0.8s both;
 }
 
 @keyframes slider-names {
@@ -137,8 +147,8 @@ body {
 @media (max-width: 768px) {
   .slider {
     grid-template-areas:
-    "img"
-    "selector"
-    "title";
+    "img img"
+    "selector selector"
+    "title title";
   }
 }
