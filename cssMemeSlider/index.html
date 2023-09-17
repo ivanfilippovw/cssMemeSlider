@@ -9,25 +9,48 @@
 </head>
 
 <body>
-  <main>
-    <div class="container">
-      <div class="slider">
+  <div class="slider container">
+    <input class="slider__input" type="radio" name="slider" id="mem1" checked>
+    <input class="slider__input" type="radio" name="slider" id="mem2">
+    <input class="slider__input" type="radio" name="slider" id="mem3">
+    <input class="slider__input" type="radio" name="slider" id="mem4">
+    <input class="slider__input" type="radio" name="slider" id="mem5">
 
-        <div class="images-container">
-          <img src="./img/mem1.jpeg" alt="mem1">
-        </div>
-
-        <div class="selectors-container">
-          <input type="radio">
-        </div>
-
-        <div class="titles-container">
-          <p>Заголовок первого мема</p>
-        </div>
-
-      </div>
+    <div class="slider__images-container">
+      <img src="./img/mem1.jpeg" alt="mem1">
+      <img src="./img/mem2.jpeg" alt="mem2">
+      <img src="./img/mem3.jpeg" alt="mem3">
+      <img src="./img/mem4.jpeg" alt="mem4">
+      <img src="./img/mem5.jpeg" alt="mem5">
     </div>
-  </main>
+
+    <div class="slider__selectors-container">
+      <label class="slider__button button" for="mem1">
+        <span class="button__icon"></span>
+      </label>
+      <label class="slider__button button" for="mem2">
+        <span class="button__icon"></span>
+      </label>
+      <label class="slider__button button" for="mem3">
+        <span class="button__icon"></span>
+      </label>
+      <label class="slider__button button" for="mem4">
+        <span class="button__icon"></span>
+      </label>
+      <label class="slider__button button" for="mem5">
+        <span class="button__icon"></span>
+      </label>
+    </div>
+
+    <div class="slider__titles-container">
+      <p class="slider__mem-title">Заголовок первого мема</p>
+      <p class="slider__mem-title">Заголовок второго мема</p>
+      <p class="slider__mem-title">Заголовок третьего мема</p>
+      <p class="slider__mem-title">Заголовок четвертого мема</p>
+      <p class="slider__mem-title">Заголовок пятого мема</p>
+    </div>
+
+  </div>
 </body>
 
 </html>

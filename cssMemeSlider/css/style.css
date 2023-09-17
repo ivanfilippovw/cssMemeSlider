@@ -26,7 +26,11 @@ body {
   row-gap: 20px;
 }
 
-@media (max-width: 720px) {
+.slider__input {
+  display: none;
+}
+
+@media (max-width: 768px) {
   .slider {
     grid-template-areas:
     "img"
@@ -35,15 +39,15 @@ body {
   }
 }
 
-.images-container {
+.slider__images-container {
   grid-area: img;
 }
 
-.selectors-container {
+.slider__selectors-container {
   grid-area: selector;
 }
 
-.titles-container {
+.slider__titles-container {
   grid-area: title;
   color: white;
 }
