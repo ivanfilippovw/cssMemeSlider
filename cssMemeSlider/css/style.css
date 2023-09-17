@@ -93,7 +93,7 @@ body {
 }
 
 .slider__button:hover > .button__icon {
-  background-color: #af4425;
+  background-color: #662e1c;
 }
 
 .slider__button:active > .button__icon {
