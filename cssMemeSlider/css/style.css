@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 10px;
-}
-
 body {
   margin: 0;
   font-size: 2rem;
@@ -15,9 +11,10 @@ body {
 }
 
 .container {
-  margin: 5rem auto;
+  margin: 1rem auto;
   padding: 2rem;
-  width: 40vh;
+  width: 100%;
+  max-width: 768px;
   background-color: #c9a66b;
   border: 1rem solid #000000;
 }
@@ -25,11 +22,13 @@ body {
 .slider {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 10rem;
   grid-template-areas:
   "img img"
   "title selector";
   column-gap: 2rem;
   row-gap: 2rem;
+  align-items: center;
 }
 
 .slider__input {
@@ -116,7 +115,6 @@ body {
 
 .slider__mem-title {
   display: none;
-  min-height: 5rem;
   margin: 0;
   margin-left: 6rem;
   opacity: 0;
@@ -143,7 +141,14 @@ body {
 }
 
 @media (max-width: 768px) {
+  .container {
+    width: 90%;
+    max-width: initial;
+    margin: 1rem auto;
+  }
+
   .slider {
+    grid-template-rows: auto auto 5rem;
     grid-template-areas:
     "img img"
     "selector selector"
