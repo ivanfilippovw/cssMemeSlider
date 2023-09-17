@@ -17,7 +17,7 @@ body {
 .container {
   margin: 5rem auto;
   padding: 2rem;
-  width: 40%;
+  width: 40vh;
   background-color: #c9a66b;
   border: 1rem solid #000000;
 }
