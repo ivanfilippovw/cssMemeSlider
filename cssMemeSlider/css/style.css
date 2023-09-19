@@ -13,7 +13,7 @@ body {
 .container {
   margin: 1rem auto;
   padding: 2rem;
-  width: 70%;
+  width: 45%;
   background-color: #c9a66b;
   border: 1rem solid #000000;
 }
@@ -138,6 +138,12 @@ body {
   to {
     margin-left: 0;
     opacity: 1;
+  }
+}
+
+@media (max-width: 1150px) {
+  .container {
+    width: 70%;
   }
 }
 
