@@ -141,6 +141,12 @@ body {
   }
 }
 
+@media (max-width: 1350px) {
+  .container {
+    width: 60%;
+  }
+}
+
 @media (max-width: 1150px) {
   .container {
     width: 70%;
