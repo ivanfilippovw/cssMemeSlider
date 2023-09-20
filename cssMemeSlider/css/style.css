@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 
@@ -33,6 +31,8 @@ body {
 .slider__input {
   display: none;
 }
+
+/* Слайдер мемов */
 
 .slider__images-container {
   grid-area: img;
@@ -69,6 +69,8 @@ body {
   width: calc(100% / 5);
   object-fit: contain;
 }
+
+/* Кнопки переключения картинок */
 
 .slider__selectors-container {
   grid-area: selector;
@@ -108,6 +110,8 @@ body {
   background-color: #af4425;
 }
 
+/* Слайдер названия мемов */
+
 .slider__titles-container {
   grid-area: title;
   font-weight: 900;
@@ -140,6 +144,8 @@ body {
     opacity: 1;
   }
 }
+
+/* Медиазапросы */
 
 @media (max-width: 1350px) {
   .container {
